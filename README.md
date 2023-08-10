@@ -1,3 +1,3 @@
-# tenchonzom.github.io
+# tenchonzom
 
 readme
