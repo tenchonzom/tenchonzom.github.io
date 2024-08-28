@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #FFFCF1;
+    margin-top: 100px;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #DFD8BE;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 4px solid #0009DA;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #0009DA;
+}
+
+header h3 {
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+    color: #0009DA;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.pages a {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+    color: inherit; /* Keep the same color as unvisited links */
+}
+
+/* About Style */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 150px;
+}
+
+.box-title {
+    display: inline-block;
+    background-color: #B7D500;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.box-title h3 {
+    margin: 0px;
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+    color: #0009DA;
+    font-size: 1.3em;
+}
+
+.about-row p {
+    margin-top: 40px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #0009DA;
+    font-size: 1.3em;
+    line-height: 45px;
+}
+
+.about-image img {
+    width: 250px;
+    border-radius: 15px;
+    border: 7.5px solid #B7D500;
+}
+
+/* Interests Styling */
+
+.interests {
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.interests p {
+    font-family: "IBM Plex Mono", monospace;
+    color: #0009DA;
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+/* Socials Styling */
+
+.socials {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.socials p {
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    color: #0009DA;
+    font-size: 1em;
+    line-height: 30px;
+}
