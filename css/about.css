@@ -1,0 +1,118 @@
+
+/* About Style */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 150px;
+}
+
+.box-title {
+    display: inline-block;
+    background-color: #B7D500;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.box-title h3 {
+    margin: 0px;
+    font-family: 'Montserrat', serif;
+    font-weight: 900;
+    color: #0009DA;
+    font-size: 1.3em;
+}
+
+.about-row p {
+    margin-top: 40px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #0009DA;
+    font-size: 1.3em;
+    line-height: 45px;
+}
+
+.about-image img {
+    width: 250px;
+    border-radius: 15px;
+    border: 7.5px solid #B7D500;
+}
+
+/* Interests Styling */
+
+.interests {
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.interests p {
+    font-family: "IBM Plex Mono", monospace;
+    color: #0009DA;
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+/* Color Transition Styling */
+
+.cobalt-blue,
+.yellow-green {
+    position: relative;
+    color: inherit;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* ::before pseudo-element for background highlight */
+.cobalt-blue::before,
+.yellow-green::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: background-color 0.5s ease;
+}
+
+.cobalt-blue:hover {
+    color: white;
+}
+
+.cobalt-blue:hover::before {
+    background-color: #0009DA;
+}
+
+.yellow-green:hover {
+    color: white;
+}
+
+.yellow-green:hover::before {
+    background-color: #B7D500;
+}
+
+/* Socials Styling */
+
+.socials {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.socials p {
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    color: #0009DA;
+    font-size: 1em;
+    line-height: 30px;
+}
